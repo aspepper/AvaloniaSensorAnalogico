@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Apresentacao", "5. Apresentacao", "{5E0EB334-6F40-4490-BB58-5F5CC08D767F}"
+	ProjectSection(SolutionItems) = preProject
+		SensorAnalogico\src\5.Apresentacao\Directory.Build.props = SensorAnalogico\src\5.Apresentacao\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{82A7D31F-CAA4-47CA-B45B-9981AC62F540}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{13BE253D-EC04-4363-B969-BC3966854533}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".root", ".root", "{72DF35E9-B898-4197-B9D5-2BCCE9AE5C83}"
+	ProjectSection(SolutionItems) = preProject
+		SensorAnalogico\Default.Analyzers.ruleset = SensorAnalogico\Default.Analyzers.ruleset
+		SensorAnalogico\Directory.Build.props = SensorAnalogico\Directory.Build.props
+		SensorAnalogico\Mac.Build.Compat.props = SensorAnalogico\Mac.Build.Compat.props
+		SensorAnalogico\README.md = SensorAnalogico\README.md
+		SensorAnalogico\stylecop.json = SensorAnalogico\stylecop.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SensorAnalogico.App", "SensorAnalogico.App", "{0CC1316B-302D-4EB6-BAC9-73029E1F96C4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorAnalogico.App", "SensorAnalogico\src\5.Apresentacao\SensorAnalogico.App\SensorAnalogico.App\SensorAnalogico.App\SensorAnalogico.App.csproj", "{19A0C79E-3702-4076-A5EF-B5358713B97D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorAnalogico.App.Android", "SensorAnalogico\src\5.Apresentacao\SensorAnalogico.App\SensorAnalogico.App\SensorAnalogico.App.Android\SensorAnalogico.App.Android.csproj", "{ABAF2CA0-FCF8-4686-8783-20F404C2CF6E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorAnalogico.App.Browser", "SensorAnalogico\src\5.Apresentacao\SensorAnalogico.App\SensorAnalogico.App\SensorAnalogico.App.Browser\SensorAnalogico.App.Browser.csproj", "{6376D25F-7E4E-42CB-BAAA-6760DA381182}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorAnalogico.App.Desktop", "SensorAnalogico\src\5.Apresentacao\SensorAnalogico.App\SensorAnalogico.App\SensorAnalogico.App.Desktop\SensorAnalogico.App.Desktop.csproj", "{E36DFA1C-5A8D-480B-B998-64EDEDDC9033}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorAnalogico.App.iOS", "SensorAnalogico\src\5.Apresentacao\SensorAnalogico.App\SensorAnalogico.App\SensorAnalogico.App.iOS\SensorAnalogico.App.iOS.csproj", "{5AC65666-E0B8-4D9C-AE13-DA58C145FC49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19A0C79E-3702-4076-A5EF-B5358713B97D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A0C79E-3702-4076-A5EF-B5358713B97D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A0C79E-3702-4076-A5EF-B5358713B97D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A0C79E-3702-4076-A5EF-B5358713B97D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABAF2CA0-FCF8-4686-8783-20F404C2CF6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABAF2CA0-FCF8-4686-8783-20F404C2CF6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABAF2CA0-FCF8-4686-8783-20F404C2CF6E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{ABAF2CA0-FCF8-4686-8783-20F404C2CF6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABAF2CA0-FCF8-4686-8783-20F404C2CF6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABAF2CA0-FCF8-4686-8783-20F404C2CF6E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6376D25F-7E4E-42CB-BAAA-6760DA381182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6376D25F-7E4E-42CB-BAAA-6760DA381182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6376D25F-7E4E-42CB-BAAA-6760DA381182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6376D25F-7E4E-42CB-BAAA-6760DA381182}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E36DFA1C-5A8D-480B-B998-64EDEDDC9033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E36DFA1C-5A8D-480B-B998-64EDEDDC9033}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E36DFA1C-5A8D-480B-B998-64EDEDDC9033}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E36DFA1C-5A8D-480B-B998-64EDEDDC9033}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AC65666-E0B8-4D9C-AE13-DA58C145FC49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AC65666-E0B8-4D9C-AE13-DA58C145FC49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AC65666-E0B8-4D9C-AE13-DA58C145FC49}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5AC65666-E0B8-4D9C-AE13-DA58C145FC49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AC65666-E0B8-4D9C-AE13-DA58C145FC49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AC65666-E0B8-4D9C-AE13-DA58C145FC49}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5E0EB334-6F40-4490-BB58-5F5CC08D767F} = {82A7D31F-CAA4-47CA-B45B-9981AC62F540}
+		{0CC1316B-302D-4EB6-BAC9-73029E1F96C4} = {5E0EB334-6F40-4490-BB58-5F5CC08D767F}
+		{19A0C79E-3702-4076-A5EF-B5358713B97D} = {0CC1316B-302D-4EB6-BAC9-73029E1F96C4}
+		{ABAF2CA0-FCF8-4686-8783-20F404C2CF6E} = {0CC1316B-302D-4EB6-BAC9-73029E1F96C4}
+		{6376D25F-7E4E-42CB-BAAA-6760DA381182} = {0CC1316B-302D-4EB6-BAC9-73029E1F96C4}
+		{E36DFA1C-5A8D-480B-B998-64EDEDDC9033} = {0CC1316B-302D-4EB6-BAC9-73029E1F96C4}
+		{5AC65666-E0B8-4D9C-AE13-DA58C145FC49} = {0CC1316B-302D-4EB6-BAC9-73029E1F96C4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {071CAE6C-E4F7-44AC-B3E8-7965B8B23ABF}
+	EndGlobalSection
+EndGlobal
