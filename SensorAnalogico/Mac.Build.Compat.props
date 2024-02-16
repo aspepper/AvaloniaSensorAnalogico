@@ -1,0 +1,12 @@
+<Project>
+  
+  <ItemGroup Condition="'$(IsLibraryProject)' == 'true' And '$(OS)' == 'Unix' ">
+    <PackageReference Update="StyleCop.Analyzers" Version="1.2.0-beta.321" PrivateAssets="All" />
+    <AdditionalFiles Include="$(SolutionDir)stylecop.json" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$(IsLibraryProject)' == 'true' And '$(OS)' == 'Unix' ">
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+  </PropertyGroup>
+
+</Project>

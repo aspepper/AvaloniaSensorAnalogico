@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net8.0</TargetFrameworks>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Verion.Infraestrutura.Dependency" Version="14.1.0" />
+      <PackageReference Include="Verion.Maquina.Controladores.Modelo" Version="16.1.0" />
+    </ItemGroup>
+
+</Project>

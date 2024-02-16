@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0</TargetFrameworks>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\1.Contrato\Mensagens.SensorAnalogico\Mensagens.SensorAnalogico.csproj" />
+		<ProjectReference Include="..\..\3.Modelo\Modelo.SensorAnalogico\Modelo.SensorAnalogico.csproj" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="Verion.Maquina.Controladores.CasosDeUso" Version="16.1.0" />
+	</ItemGroup>
+	
+</Project>

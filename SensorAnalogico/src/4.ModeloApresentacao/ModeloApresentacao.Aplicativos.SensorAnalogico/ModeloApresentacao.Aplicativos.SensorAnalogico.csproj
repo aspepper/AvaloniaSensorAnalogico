@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net8.0</TargetFrameworks>
+        <NoWarn>$(NoWarn);SA1649</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="PropertyChanged.Fody" Version="3.4.1" PrivateAssets="All" />
+        <PackageReference Include="Verion.Maquina.Controladores.ModeloApresentacao.Aplicativos" Version="16.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\ModeloAplicacao.SensorAnalogico\ModeloAplicacao.SensorAnalogico.csproj" />
+    </ItemGroup>
+
+</Project>
