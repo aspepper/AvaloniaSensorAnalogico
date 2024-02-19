@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<data name="AppName" xml:space="preserve">
+	    <value>Imbarcato</value>
+	</data>
+
+	<data name="TitleComponentScreen" xml:space="preserve">
+	    <value>Schermata dei Componenti</value>
+	</data>
+
+	<data name="TitleAnalogInputScreen" xml:space="preserve">
+	    <value>Ingresso Analogico</value>
+	</data>
+
+	<data name="TitleAnalogInputConfigurationScreen" xml:space="preserve">
+	    <value>Configurazione dell'Ingresso Analogico</value>
+	</data>
+
+	<data name="ButtonBack" xml:space="preserve">
+	    <value>Tornare Indietro</value>
+	</data>
+
+	<data name="LabelStatus" xml:space="preserve">
+	    <value>Stato</value>
+	</data>
+
+	<data name="LabelValue" xml:space="preserve">
+	    <value>Valore</value>
+	</data>
+
+	<data name="LabelStatusCommand" xml:space="preserve">
+	    <value>Stato Comando</value>
+	</data>
+
+	<data name="LabelCommand" xml:space="preserve">
+	    <value>Comando</value>
+	</data>
+
+	<data name="LabelCommandTypeParameters" xml:space="preserve">
+	    <value>Parametri del Tipo di Comando</value>
+	</data>
+
+	<data name="LabelConfiguration" xml:space="preserve">
+	    <value>Stato Impostazioni</value>
+	</data>
+
+	<data name="LabelCalibration" xml:space="preserve">
+	    <value>Calibrazione</value>
+	</data>
+
+	<data name="LabelCalibration1" xml:space="preserve">
+	    <value>Calibrazione 1</value>
+	</data>
+
+	<data name="LabelCalibration2" xml:space="preserve">
+	    <value>Calibrazione 2</value>
+	</data>
+
+	<data name="LabelCalibration3" xml:space="preserve">
+	    <value>Calibrazione 3</value>
+	</data>
+
+	<data name="LabelCalibration4" xml:space="preserve">
+	    <value>Calibrazione 4</value>
+	</data>
+
+	<data name="LabelCalibration5" xml:space="preserve">
+	    <value>Calibrazione 5</value>
+	</data>
+
+	<data name="LabelCalibration6" xml:space="preserve">
+	    <value>Calibrazione 6</value>
+	</data>
+
+	<data name="LabelCalibrationPoints" xml:space="preserve">
+	    <value>Punti di Calibrazione</value>
+	</data>
+
+	<data name="LabelValue1" xml:space="preserve">
+	    <value>Valore 1</value>
+	</data>
+
+	<data name="LabelValue2" xml:space="preserve">
+	    <value>Valore 2</value>
+	</data>
+
+	<data name="LabelValue3" xml:space="preserve">
+	    <value>Valore 3</value>
+	</data>
+
+	<data name="LabelValue4" xml:space="preserve">
+	    <value>Valore 4</value>
+	</data>
+
+	<data name="LabelValue5" xml:space="preserve">
+	    <value>Valore 5</value>
+	</data>
+
+	<data name="LabelValue6" xml:space="preserve">
+	    <value>Valore 6</value>
+	</data>
+
+	<data name="LabelButtonChangeConfiguration" xml:space="preserve">
+	    <value>Modifica Configurazione</value>
+	</data>
+
+	<data name="LabelButtonChangeCommand" xml:space="preserve">
+	    <value>Cambia Comando</value>
+	</data>
+
+	<data name="LabelButtonCommandSave" xml:space="preserve">
+	    <value>Salva Comando</value>
+	</data>
+
+	<data name="LabelButtonGetInput" xml:space="preserve">
+	    <value>Ottieni input</value>
+	</data>
+
+	<data name="LabelMicrocontrollerId" xml:space="preserve">
+	    <value>ID del Microcontrollore</value>
+	</data>
+
+	<data name="LabelComponentId" xml:space="preserve">
+	    <value>ID Componente</value>
+	</data>
+
+	<data name="LabelAnalogInputConfigurationParameters" xml:space="preserve">
+	    <value>Parametri di Configurazione dell'Ingresso Analogico</value>
+	</data>
+
+	<data name="LabelCalibration1" xml:space="preserve">
+	    <value>Calibrazione 1:</value>
+	</data>
+
+	<data name="LabelValue1" xml:space="preserve">
+	    <value>Valore 1:</value>
+	</data>
+
+	<data name="LabelCalibration2" xml:space="preserve">
+	    <value>Calibrazione 2:</value>
+	</data>
+
+	<data name="LabelValue2" xml:space="preserve">
+	    <value>Valore 2:</value>
+	</data>
+
+	<data name="LabelCalibration3" xml:space="preserve">
+	    <value>Calibrazione 3:</value>
+	</data>
+
+	<data name="LabelValue3" xml:space="preserve">
+	    <value>Valore 3:</value>
+	</data>
+
+	<data name="LabelCalibration4" xml:space="preserve">
+	    <value>Calibrazione 4:</value>
+	</data>
+
+	<data name="LabelValue4" xml:space="preserve">
+	    <value>Valore 4:</value>
+	</data>
+
+	<data name="LabelCalibration5" xml:space="preserve">
+	    <value>Calibrazione 5:</value>
+	</data>
+
+	<data name="LabelValue5" xml:space="preserve">
+	    <value>Valore 5:</value>
+	</data>
+
+	<data name="LabelButtonSaveConfiguration" xml:space="preserve">
+	    <value>Salva Configurazione</value>
+	</data>
+
+</root>

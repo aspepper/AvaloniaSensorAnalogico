@@ -1,0 +1,87 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+		<AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<AvaloniaResource Include="Assets\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<AvaloniaResource Remove="Assets\Readme.md" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Assets\Ico_Back.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Avalonia" Version="11.0.9">
+			<TreatAsUsed>true</TreatAsUsed>
+		</PackageReference>
+		<PackageReference Include="Avalonia.Controls.ColorPicker" Version="11.0.9" />
+		<PackageReference Include="Avalonia.Controls.DataGrid" Version="11.0.9" />
+		<PackageReference Include="Avalonia.Svg.Skia" Version="11.0.0.13" />
+		<PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.9">
+			<TreatAsUsed>true</TreatAsUsed>
+		</PackageReference>
+		<PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.9">
+			<TreatAsUsed>true</TreatAsUsed>
+		</PackageReference>
+		<PackageReference Include="Avalonia.ReactiveUI" Version="11.0.9" />
+		<!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+		<PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.9" />
+		<PackageReference Include="Material.Avalonia" Version="3.3.0" />
+		<PackageReference Include="Material.Icons.Avalonia" Version="2.1.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Assets\Resources.resx">
+			<Generator>PublicResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Assets\Resources.resx">
+			<Generator>PublicResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Assets\Resources.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+		<Compile Update="Views\MainWindow.axaml.cs">
+		  <DependentUpon>ForwarderView.axaml</DependentUpon>
+		</Compile>
+		<Compile Update="Views\MainView.axaml.cs">
+		  <DependentUpon>FellerView.axaml</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Update="Microsoft.SourceLink.GitLab" Version="8.0.0" />
+	  <PackageReference Update="Verion.Development" Version="17.0.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Interfaces\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <AvaloniaResource Update="Assets\ico_back.svg">
+	    <CopyToOutputDirectory></CopyToOutputDirectory>
+	  </AvaloniaResource>
+	</ItemGroup>
+
+</Project>

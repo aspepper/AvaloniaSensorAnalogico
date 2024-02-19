@@ -1,0 +1,652 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:assets="using:SensorAnalogico.App.Assets"
+			 xmlns:vm="using:SensorAnalogico.App.ViewModels"
+			 xmlns:views="using:SensorAnalogico.App.Views"
+             mc:Ignorable="d"
+			 d:DesignWidth="1280"
+			 d:DesignHeight="800"
+             x:Class="SensorAnalogico.App.Views.AnalogicInView"
+             x:DataType="vm:AnalogicInViewModel"
+			 Padding="0"
+			 Background="Transparent">
+	<Design.DataContext>
+		<vm:AnalogicInViewModel />
+	</Design.DataContext>
+
+	<Viewbox Stretch="UniformToFill" StretchDirection="Both">
+		
+		<Grid RowDefinitions="86,610,104">
+
+			<!-- Header -->
+			<Panel Grid.Row="0"
+				   Background="#FAFAFA">
+				<!-- Botão Voltar -->
+				<Grid ColumnDefinitions="12,110,1160"
+					  Margin="0,2,0,2">
+					<Border Grid.Column="1"
+							CornerRadius="6"
+							Margin="0,3,0,5"
+							Padding="0"
+							BoxShadow="3 3 5 0 #A9A9A9"
+							Background="#D1D3D4">
+						<Button VerticalAlignment="Stretch"
+								HorizontalAlignment="Stretch"
+								Background="Transparent"
+								Command="{Binding CommandGoBack}"
+								CommandParameter="{Binding ParentContent, RelativeSource={RelativeSource AncestorType=views:AnalogicInView}}">
+							<Grid RowDefinitions="*,*">
+								<Image Grid.Row="0"
+									   HorizontalAlignment="Center"
+									   VerticalAlignment="Center"
+									   Source="{SvgImage /Assets/ico_back.svg}"
+									   Width="45"
+									   Height="45"
+									   Margin="0,5,0,0" />
+								<Label Grid.Row="1"
+									   FontWeight="Bold"
+									   FontSize="18"
+									   HorizontalAlignment="Center"
+									   VerticalAlignment="Center"
+									   Content="{x:Static assets:Resources.ButtonBack}" />
+							</Grid>
+						</Button>
+					</Border>
+				</Grid>
+				<Label HorizontalAlignment="Center"
+					   VerticalAlignment="Center"
+					   FontWeight="Bold"
+					   FontSize="38"
+					   Content="{x:Static assets:Resources.TitleAnalogInputScreen}" />
+			</Panel>
+
+			<!-- Body Middle -->
+			<Grid Grid.Row="1"
+				  RowDefinitions="151,345,78"
+				  ColumnDefinitions="30, 595, 30, 595, 30"
+				  Background="#D1D3D4">
+				<!-- Height = 574 -->
+
+				<!-- Body Left -->
+
+				<!-- Status -->
+				<Border Grid.Column="1"
+						Grid.Row="0"
+						Background="#FAFAFA"
+						CornerRadius="8"
+						Margin="0,26,0,0"
+						BorderThickness="0"
+						ClipToBounds="True">
+
+					<Grid RowDefinitions="48,24,54"
+						  Margin="15,0,15,0">
+						<!-- Height = 126 -->
+						
+						<Label Grid.Row="0"
+							   HorizontalAlignment="Left"
+							   VerticalAlignment="Center"
+							   FontWeight="Bold"
+							   FontSize="28"
+							   Content="{x:Static assets:Resources.LabelStatus}" />
+
+						<!-- INI: Quadro de Status -->
+						<Border Grid.Row="1"
+								Background="#EFEFEF"
+								BorderBrush="#323232"
+								BorderThickness="1">
+							<Label Grid.Row="0"
+								   HorizontalAlignment="Left"
+								   VerticalAlignment="Center"
+								   FontSize="16"
+								   Margin="30,0,0,0"
+								   Content="{x:Static assets:Resources.LabelValue}" />
+						</Border>
+
+						<Border Grid.Row="2"
+								Background="Transparent"
+								BorderBrush="#323232"
+								BorderThickness="1,0,1,1"
+								Margin="0,0,0,14">
+							<Grid ColumnDefinitions="140.25,420.72">
+								<Ellipse Grid.Column="0"
+										 Width="17"
+										 Height="17"
+										 Fill="{Binding StatusColor}"
+										 HorizontalAlignment="Center"
+										 VerticalAlignment="Center" />
+								<Label Grid.Column="1"
+									   HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="26"
+									   FontWeight="Bold"
+									   Content="{Binding Service.ConfigurationData.GeneralStatus}" />
+
+							</Grid>
+						</Border>
+						<!-- FIM: Quadro de Status -->
+
+					</Grid>
+				</Border>
+
+				<!-- INI: Quadro de Configuração -->
+				<Border Grid.Column="1"
+						Grid.Row="1"
+						Background="#FAFAFA"
+						CornerRadius="8"
+						Margin="0,24,0,0">
+
+					<Grid RowDefinitions="50.33,270.67"
+						  Margin="16,12.69,17.01,19.37">
+						<!-- Height = 321 -->
+
+						<Label Grid.Row="0"
+							   HorizontalAlignment="Left"
+							   VerticalAlignment="Top"
+							   FontWeight="Bold"
+							   FontSize="28"
+							   Content="{x:Static assets:Resources.LabelConfiguration}" />
+
+						<Grid Grid.Row="1"
+							  ColumnDefinitions="187.54,187.54,187.54"
+							  RowDefinitions="23.95,40.2,23.95,40.2,23.95,40.2,23.95,40.2">
+							<!-- Height = 256.6-->
+							
+							<!-- Linha 0 -->
+							<Border Grid.Row="0"
+									Grid.Column="0"
+									BorderBrush="#323232"
+									BorderThickness="1"
+									Background="#EFEFEF" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="16"
+									   Content="{x:Static assets:Resources.LabelCalibration1}" />
+							</Border>
+							<Border Grid.Row="0"
+									Grid.Column="1"
+									BorderBrush="#323232"
+									BorderThickness="0,1,1,1"
+									Background="#EFEFEF" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="16"
+									   Content="{x:Static assets:Resources.LabelCalibration2}" />
+							</Border>
+							<Border Grid.Row="0"
+									Grid.Column="2"
+									BorderBrush="#323232"
+									BorderThickness="0,1,1,1"
+									Background="#EFEFEF" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="16"
+									   Content="{x:Static assets:Resources.LabelCalibration3}" />
+							</Border>
+
+							<!-- Linha 1 -->
+							<Border Grid.Row="1"
+									Grid.Column="0"
+									BorderBrush="#323232"
+									BorderThickness="1,0,1,0"
+									Background="#FAFAFA" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="26"
+									   FontWeight="Bold"
+									   Content="{Binding Service.ConfigurationData.Calibration1}" />
+							</Border>
+							<Border Grid.Row="1"
+									Grid.Column="1"
+									BorderBrush="#323232"
+									BorderThickness="0,0,1,0"
+									Background="#FAFAFA" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="26"
+									   FontWeight="Bold"
+									   Content="{Binding Service.ConfigurationData.Calibration2}" />
+							</Border>
+							<Border Grid.Row="1"
+									Grid.Column="2"
+									BorderBrush="#323232"
+									BorderThickness="0,0,1,0"
+									Background="#FAFAFA" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="26"
+									   FontWeight="Bold"
+									   Content="{Binding Service.ConfigurationData.Calibration3}" />
+							</Border>
+
+							<!-- Linha 2 -->
+							<Border Grid.Row="2"
+									Grid.Column="0"
+									BorderBrush="#323232"
+									BorderThickness="1"
+									Background="#EFEFEF" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="16"
+									   Content="{x:Static assets:Resources.LabelCalibration4}" />
+							</Border>
+							<Border Grid.Row="2"
+									Grid.Column="1"
+									BorderBrush="#323232"
+									BorderThickness="0,1,1,1"
+									Background="#EFEFEF" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="16"
+									   Content="{x:Static assets:Resources.LabelCalibration5}" />
+							</Border>
+							<Border Grid.Row="2"
+									Grid.Column="2"
+									BorderBrush="#323232"
+									BorderThickness="0,1,1,1"
+									Background="#EFEFEF" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="16"
+									   Content="{x:Static assets:Resources.LabelValue1}" />
+							</Border>
+
+							<!-- Linha 3 -->
+							<Border Grid.Row="3"
+									Grid.Column="0"
+									BorderBrush="#323232"
+									BorderThickness="1,0,1,0"
+									Background="#FAFAFA" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="26"
+									   FontWeight="Bold"
+									   Content="{Binding Service.ConfigurationData.Calibration4}" />
+							</Border>
+							<Border Grid.Row="3"
+									Grid.Column="1"
+									BorderBrush="#323232"
+									BorderThickness="0,0,1,0"
+									Background="#FAFAFA" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="26"
+									   FontWeight="Bold"
+									   Content="{Binding Service.ConfigurationData.Calibration5}" />
+							</Border>
+							<Border Grid.Row="3"
+									Grid.Column="2"
+									BorderBrush="#323232"
+									BorderThickness="0,0,1,0"
+									Background="#FAFAFA" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="26"
+									   FontWeight="Bold"
+									   Content="{Binding Service.ConfigurationData.Value1}" />
+							</Border>
+
+							<!-- Linha 4 -->
+							<Border Grid.Row="4"
+									Grid.Column="0"
+									BorderBrush="#323232"
+									BorderThickness="1"
+									Background="#EFEFEF" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="16"
+									   Content="{x:Static assets:Resources.LabelValue2}" />
+							</Border>
+							<Border Grid.Row="4"
+									Grid.Column="1"
+									BorderBrush="#323232"
+									BorderThickness="0,1,1,1"
+									Background="#EFEFEF" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="16"
+									   Content="{x:Static assets:Resources.LabelValue3}" />
+							</Border>
+							<Border Grid.Row="4"
+									Grid.Column="2"
+									BorderBrush="#323232"
+									BorderThickness="0,1,1,1"
+									Background="#EFEFEF" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="16"
+									   Content="{x:Static assets:Resources.LabelValue4}" />
+							</Border>
+
+							<!-- Linha 5 -->
+							<Border Grid.Row="5"
+									Grid.Column="0"
+									BorderBrush="#323232"
+									BorderThickness="1,0,1,0"
+									Background="#FAFAFA" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="26"
+									   FontWeight="Bold"
+									   Content="{Binding Service.ConfigurationData.Value2}" />
+							</Border>
+							<Border Grid.Row="5"
+									Grid.Column="1"
+									BorderBrush="#323232"
+									BorderThickness="0,0,1,0"
+									Background="#FAFAFA" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="26"
+									   FontWeight="Bold"
+									   Content="{Binding Service.ConfigurationData.Value3}" />
+							</Border>
+							<Border Grid.Row="5"
+									Grid.Column="2"
+									BorderBrush="#323232"
+									BorderThickness="0,0,1,0"
+									Background="#FAFAFA" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="26"
+									   FontWeight="Bold"
+									   Content="{Binding Service.ConfigurationData.Value4}" />
+							</Border>
+
+							<!-- Linha 6 -->
+							<Border Grid.Row="6"
+									Grid.Column="0"
+									BorderBrush="#323232"
+									BorderThickness="1"
+									Background="#EFEFEF" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="16"
+									   Content="{x:Static assets:Resources.LabelValue5}" />
+							</Border>
+							<Border Grid.Row="6"
+									Grid.Column="1"
+									BorderBrush="#323232"
+									BorderThickness="0,1,1,1"
+									Background="#EFEFEF" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="16"
+									   Content="{x:Static assets:Resources.LabelCalibrationPoints}" />
+							</Border>
+							<Border Grid.Row="6"
+									Grid.Column="2"
+									BorderBrush="#323232"
+									BorderThickness="0,1,0,0"
+									Background="#FAFAFA" />
+
+							<!-- Linha 7 -->
+							<Border Grid.Row="7"
+									Grid.Column="0"
+									BorderBrush="#323232"
+									BorderThickness="1,0,1,1"
+									Background="#FAFAFA" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="26"
+									   FontWeight="Bold"
+									   Content="{Binding Service.ConfigurationData.Value5}" />
+							</Border>
+							<Border Grid.Row="7"
+									Grid.Column="1"
+									BorderBrush="#323232"
+									BorderThickness="0,0,1,1"
+									Background="#FAFAFA" >
+								<Label HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="26"
+									   FontWeight="Bold"
+									   Content="{Binding Service.ConfigurationData.CalibrationPoints}" />
+							</Border>
+
+						</Grid>
+
+					</Grid>
+
+				</Border>
+				<!-- FIM: Quadro de Configuração -->
+
+				<Border Grid.Column="1"
+						Grid.Row="2"
+						CornerRadius="6"
+						Margin="0,22,0,10"
+						BoxShadow="3 3 5 0 #A9A9A9"
+						Background="#FFFFFF">
+					<Button VerticalAlignment="Stretch"
+							HorizontalAlignment="Stretch"
+							Padding="0"
+							CornerRadius="6"
+							Background="Transparent"
+							Command="{Binding CommandChangeConfiguration}"
+							CommandParameter="{Binding ParentContent, RelativeSource={RelativeSource AncestorType=views:AnalogicInView}}">
+						<Label Content="{x:Static assets:Resources.LabelButtonChangeConfiguration}"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   FontSize="28"
+							   FontWeight="Bold" />
+					</Button>
+				</Border>
+
+				<!-- Body Right -->
+
+				<!-- Status -->
+				<Border Grid.Column="3"
+						Grid.Row="0"
+						Background="#FAFAFA"
+						CornerRadius="8"
+						Margin="0,26,0,0"
+						BorderThickness="0"
+						ClipToBounds="True">
+
+					<Grid RowDefinitions="48,24,54">
+						<Label Grid.Row="0"
+							   Margin="15,0,15,0"
+							   HorizontalAlignment="Left"
+							   VerticalAlignment="Center"
+							   FontWeight="Bold"
+							   FontSize="28"
+							   Content="{x:Static assets:Resources.LabelStatusCommand}" />
+
+						<!-- INI: Quadro de Comando -->
+						<Border Grid.Row="1"
+								Background="#EFEFEF"
+								BorderBrush="#323232"
+								BorderThickness="1"
+								Margin="15,0,15,0">
+							<Label Grid.Row="0"
+								   HorizontalAlignment="Left"
+								   VerticalAlignment="Center"
+								   FontSize="16"
+								   Margin="30,0,0,0"
+								   Content="{x:Static assets:Resources.LabelValue}" />
+
+						</Border>
+						<Border Grid.Row="2"
+								Background="Transparent"
+								BorderBrush="#323232"
+								BorderThickness="1,0,1,1"
+								Margin="15,0,15,14">
+							<Grid ColumnDefinitions="140.25,420.72">
+								<Ellipse Grid.Column="0"
+										 Width="17"
+										 Height="17"
+										 Fill="{Binding CommandColor}"
+										 HorizontalAlignment="Center"
+										 VerticalAlignment="Center" />
+								<Label Grid.Column="1"
+									   HorizontalAlignment="Left"
+									   VerticalAlignment="Center"
+									   FontSize="26"
+									   FontWeight="Bold"
+									   Content="{Binding Service.ConfigurationData.CommandStatus}" />
+
+							</Grid>
+						</Border>
+						<!-- FIM: Quadro de Comando -->
+
+					</Grid>
+
+				</Border>
+
+				<!-- INI: Quadro de Configuração -->
+				<Grid Grid.Column="3"
+					  Grid.Row="1"
+					  ColumnDefinitions="*"
+					  RowDefinitions="202,*">
+					<Border Grid.Column="3"
+							Grid.Row="0"
+							Background="#FAFAFA"
+							CornerRadius="8"
+							Margin="0,24,0,5">
+
+						<Grid RowDefinitions="50.33,151.67">
+							<Label Grid.Row="0"
+								   HorizontalAlignment="Left"
+								   VerticalAlignment="Center"
+								   FontWeight="Bold"
+								   FontSize="28"
+								   Margin="15,0,0,0"
+								   Content="{x:Static assets:Resources.LabelCommand}" />
+
+							<Grid Grid.Row="1"
+								  ColumnDefinitions="561"
+								  Margin="15,0,19,0"
+								  Background="Transparent"
+								  RowDefinitions="54,54">
+
+								<!-- Linha 0 -->
+								<Border Grid.Row="0"
+										Grid.Column="0"
+										CornerRadius="6,0"
+										BorderBrush="#323232"
+										BorderThickness="1"
+										Background="#323232" >
+									<Label HorizontalAlignment="Center"
+										   VerticalAlignment="Center"
+										   FontSize="24"
+										   Foreground="#FFFFFF"
+										   Content="{x:Static assets:Resources.LabelCommandTypeParameters}" />
+								</Border>
+
+								<!-- Linha 1 -->
+								<Border Grid.Row="1"
+										Grid.Column="0"
+										CornerRadius="0,6"
+										BorderBrush="#323232"
+										BorderThickness="1,0,1,1"
+										Background="#FAFAFA">
+									<Grid ColumnDefinitions="280.5,280.5">
+										<Label Grid.Column="0"
+											   HorizontalAlignment="Left"
+											   VerticalAlignment="Center"
+											   FontSize="28"
+											   Margin="10,0,0,0"
+											   Content="{x:Static assets:Resources.LabelValue}" />
+										<MaskedTextBox Grid.Column="1"
+													   BorderThickness="1"
+													   Margin="0,3,10,3"
+													   Background="Transparent"
+													   AcceptsReturn="False"
+													   AcceptsTab="False"
+													   CornerRadius="6"
+													   BorderBrush="#323232"
+													   FontSize="28"
+													   DataContext="{Binding Service.ConfigurationData.CommandType}"
+													   Text="0"
+													   Mask="000"
+													   Watermark="0" />
+									</Grid>
+								</Border>
+
+							</Grid>
+
+						</Grid>
+					</Border>
+				</Grid>
+				<!-- FIM: Quadro de Configuração -->
+
+				<Border Grid.Column="3"
+						Grid.Row="2"
+						CornerRadius="6"
+						Margin="0,22,0,10"
+						BoxShadow="3 3 5 0 #A9A9A9"
+						Background="#F6A500">
+					<Button VerticalAlignment="Stretch"
+							HorizontalAlignment="Stretch"
+							Padding="0"
+							CornerRadius="6"
+							Background="Transparent"
+							Command="{Binding CommandChangeCommand}">
+						<Label Content="{x:Static assets:Resources.LabelButtonChangeCommand}"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   Foreground="#FFFFFF"
+							   FontSize="28"
+							   FontWeight="Bold" />
+					</Button>
+				</Border>
+
+			</Grid>
+
+			<Grid Grid.Row="2"
+				  ColumnDefinitions="30,924,65,232,30"
+				  Background="#D1D3D4">
+				
+				<Border Grid.Column="1"
+						Background="#FAFAFA"
+						CornerRadius="8"
+						Margin="0,0,0,30">
+					<Grid ColumnDefinitions="136,136,185.5,185.5">
+						<Label Grid.Column="0"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   FontSize="26"
+							   Content="{x:Static assets:Resources.LabelMicrocontrollerId}" />
+						<Label Grid.Column="1"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   FontSize="26"
+							   Content="{Binding MicrocontrollerId}" />
+						<Label Grid.Column="2"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   FontSize="26"
+							   Content="{x:Static assets:Resources.LabelComponentId}" />
+						<Label Grid.Column="3"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   FontSize="26"
+							   Content="{Binding ComponentId}" />
+					</Grid>
+				</Border>
+				
+				<Grid Grid.Column="3"
+					  Margin="0,0,0,30">
+					<Border Background="#FAFAFA"
+							Margin="0,0,0,0"
+							BoxShadow="3 3 5 0 #A9A9A9"
+							CornerRadius="6">
+						<Button Background="Transparent"
+							HorizontalAlignment="Stretch"
+							VerticalAlignment="Stretch"
+							Padding="0"
+							Command="{Binding CommandGetInput}">
+							<Label FontWeight="Bold"
+								   HorizontalAlignment="Center"
+								   VerticalAlignment="Center"
+								   FontSize="28"
+								   Content="{x:Static assets:Resources.LabelButtonGetInput}" />
+						</Button>
+					</Border>
+				</Grid>
+			</Grid>
+
+		</Grid>
+	</Viewbox>
+</UserControl>
