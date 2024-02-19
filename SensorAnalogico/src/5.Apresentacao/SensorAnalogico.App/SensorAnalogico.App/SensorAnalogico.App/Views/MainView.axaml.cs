@@ -1,22 +1,23 @@
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.ReactiveUI;
-using SensorAnalogico.App.Services;
 using SensorAnalogico.App.ViewModels;
 
 namespace SensorAnalogico.App.Views
 {
     public partial class MainView : ReactiveUserControl<MainViewModel>
     {
-        protected MainViewModel viewModel = new();
-
         public MainView()
         {
             InitializeComponent();
-            DataContext = viewModel;
-            CurrentContentView.Content = PageService.CurrentPage;
+            DataContext = new MainViewModel();
+            ((MainViewModel)DataContext).OpenInitialScreen(CurrentContentView, ResourcePages.PageName.Component);
         }
 
+        /// <summary>
+        /// Disables the status bar on mobile devices
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnLoaded(RoutedEventArgs e)
         {
             base.OnLoaded(e);

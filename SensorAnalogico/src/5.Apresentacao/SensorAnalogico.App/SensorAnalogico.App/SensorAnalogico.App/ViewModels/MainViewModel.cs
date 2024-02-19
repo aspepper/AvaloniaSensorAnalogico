@@ -1,10 +1,13 @@
-﻿namespace SensorAnalogico.App.ViewModels;
+﻿using Avalonia.Controls;
+
+namespace SensorAnalogico.App.ViewModels;
 
 public partial class MainViewModel : ViewModelBase
 {
-    public MainViewModel()
+
+    public void OpenInitialScreen(TransitioningContentControl tcc, ResourcePages.PageName page)
     {
-        CurrentContentView ??= new ComponentViewModel();
+        this.NavigateTo(tcc, page);
     }
 }
 

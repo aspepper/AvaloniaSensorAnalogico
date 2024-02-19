@@ -602,14 +602,14 @@
 						Background="#FAFAFA"
 						CornerRadius="8"
 						Margin="0,0,0,30">
-					<Grid ColumnDefinitions="136,136,185.5,185.5">
+					<Grid ColumnDefinitions="277.2,184.8,277.2,184.8">
 						<Label Grid.Column="0"
 							   HorizontalAlignment="Center"
 							   VerticalAlignment="Center"
 							   FontSize="26"
 							   Content="{x:Static assets:Resources.LabelMicrocontrollerId}" />
 						<Label Grid.Column="1"
-							   HorizontalAlignment="Center"
+							   HorizontalAlignment="Left"
 							   VerticalAlignment="Center"
 							   FontSize="26"
 							   Content="{Binding MicrocontrollerId}" />
@@ -619,7 +619,7 @@
 							   FontSize="26"
 							   Content="{x:Static assets:Resources.LabelComponentId}" />
 						<Label Grid.Column="3"
-							   HorizontalAlignment="Center"
+							   HorizontalAlignment="Left"
 							   VerticalAlignment="Center"
 							   FontSize="26"
 							   Content="{Binding ComponentId}" />

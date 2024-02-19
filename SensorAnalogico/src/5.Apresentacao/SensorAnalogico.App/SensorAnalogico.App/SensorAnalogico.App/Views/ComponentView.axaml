@@ -5,7 +5,9 @@
 			 xmlns:assets="using:SensorAnalogico.App.Assets"
 			 xmlns:vm="using:SensorAnalogico.App.ViewModels"
 			 xmlns:views="using:SensorAnalogico.App.Views"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             mc:Ignorable="d"
+			 d:DesignWidth="1280"
+			 d:DesignHeight="800"
              x:Class="SensorAnalogico.App.Views.ComponentView"
              x:DataType="vm:ComponentViewModel"
 			 Padding="0"
@@ -14,56 +16,62 @@
 		<vm:ComponentViewModel />
 	</Design.DataContext>
 
-	<Grid RowDefinitions="10*,90*">
+	<Viewbox Stretch="UniformToFill" StretchDirection="Both">
 
-		<!-- Header -->
-		<Panel Grid.Row="0"
-			   Background="#FAFAFA">
-			<!-- Botão Voltar -->
-			<Grid ColumnDefinitions="2*,8*,90*">
-				<Border Grid.Column="1"
-						CornerRadius="6"
-						Margin="0,3,0,5"
-						BoxShadow="3 3 5 0 #A9A9A9"
-						Background="#D1D3D4">
-					<Button VerticalAlignment="Stretch"
-							HorizontalAlignment="Stretch"
+		<Grid RowDefinitions="86,734">
+
+			<!-- Header -->
+			<Panel Grid.Row="0"
+				   Background="#FAFAFA">
+				<!-- Botão Voltar -->
+				<Grid ColumnDefinitions="12,110,1160"
+					  Margin="0,2,0,2">
+					<Border Grid.Column="1"
+							CornerRadius="6"
+							Margin="0,3,0,5"
 							Padding="0"
-							Background="Transparent">
-						<Grid RowDefinitions="37*,63*"
-						  VerticalAlignment="Center"
-						  HorizontalAlignment="Center"
-						  Margin="10,2,10,0">
-							<Image Grid.Row="0"
-								   Margin="0"
-								   Source="{SvgImage /Assets/ico_back.svg}" />
-							<Label Grid.Row="1"
-								   FontWeight="Bold"
-								   FontSize="12"
-								   Content="{x:Static assets:Resources.ButtonBack}" />
-						</Grid>
-					</Button>
-				</Border>
-			</Grid>
-			<Label HorizontalAlignment="Center"
-				   VerticalAlignment="Center"
-				   FontWeight="Bold"
-				   FontSize="25.333"
-				   Content="Tela Componente" />
-		</Panel>
+							BoxShadow="3 3 5 0 #A9A9A9"
+							Background="#D1D3D4">
+						<Button VerticalAlignment="Stretch"
+								HorizontalAlignment="Stretch"
+								Background="Transparent">
+							<Grid RowDefinitions="*,*">
+								<Image Grid.Row="0"
+									   HorizontalAlignment="Center"
+									   VerticalAlignment="Center"
+									   Source="{SvgImage /Assets/ico_back.svg}"
+									   Width="45"
+									   Height="45"
+									   Margin="0,5,0,0" />
+								<Label Grid.Row="1"
+									   FontWeight="Bold"
+									   FontSize="18"
+									   HorizontalAlignment="Center"
+									   VerticalAlignment="Center"
+									   Content="{x:Static assets:Resources.ButtonBack}" />
+							</Grid>
+						</Button>
+					</Border>
+				</Grid>
+				<Label HorizontalAlignment="Center"
+					   VerticalAlignment="Center"
+					   FontWeight="Bold"
+					   FontSize="38"
+					   Content="Tela Componente" />
+			</Panel>
 
-		<Button Grid.Row="1"
-				Name="ButtonAnalogicIntretch"
-				Background="#F0F0F0"
-				HorizontalAlignment="Stretch"
-				Command="{Binding CommandOpenAnalogicIn}"
-				CommandParameter="{Binding ParentContent, RelativeSource={RelativeSource AncestorType=views:ComponentView}}">
-			<Label HorizontalAlignment="Center"
-				   FontWeight="Bold"
-				   Content="Abrir Input Analógico" />
-		</Button>
+			<Button Grid.Row="1"
+					Name="ButtonAnalogicIntretch"
+					Background="#F0F0F0"
+					HorizontalAlignment="Stretch"
+					Command="{Binding CommandOpenAnalogicIn}"
+					CommandParameter="{Binding ParentContent, RelativeSource={RelativeSource AncestorType=views:ComponentView}}">
+				<Label HorizontalAlignment="Center"
+					   FontWeight="Bold"
+					   Content="Abrir Input Analógico" />
+			</Button>
 
-	</Grid>
-
+		</Grid>
+	</Viewbox>
 
 </UserControl>
