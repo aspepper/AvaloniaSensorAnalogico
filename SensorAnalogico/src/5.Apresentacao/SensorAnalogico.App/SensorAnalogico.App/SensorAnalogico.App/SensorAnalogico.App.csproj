@@ -49,23 +49,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<EmbeddedResource Update="Assets\Resources.resx">
-			<Generator>PublicResXFileCodeGenerator</Generator>
-			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
-		</EmbeddedResource>
-	</ItemGroup>
-
-	<ItemGroup>
 		<Compile Update="Assets\Resources.Designer.cs">
 			<DesignTime>True</DesignTime>
 			<AutoGen>True</AutoGen>
 			<DependentUpon>Resources.resx</DependentUpon>
-		</Compile>
-		<Compile Update="Views\MainWindow.axaml.cs">
-		  <DependentUpon>ForwarderView.axaml</DependentUpon>
-		</Compile>
-		<Compile Update="Views\MainView.axaml.cs">
-		  <DependentUpon>FellerView.axaml</DependentUpon>
 		</Compile>
 	</ItemGroup>
 
