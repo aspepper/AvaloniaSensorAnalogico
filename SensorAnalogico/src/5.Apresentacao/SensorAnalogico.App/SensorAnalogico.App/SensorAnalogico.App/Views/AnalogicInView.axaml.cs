@@ -1,5 +1,4 @@
 using Avalonia.Controls;
-using SensorAnalogico.App.ViewModels;
 
 namespace SensorAnalogico.App.Views;
 

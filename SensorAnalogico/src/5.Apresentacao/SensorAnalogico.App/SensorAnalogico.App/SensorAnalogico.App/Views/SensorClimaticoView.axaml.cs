@@ -1,16 +1,16 @@
 using Avalonia.Controls;
-using SensorAnalogico.App.ViewModels;
 
-namespace SensorAnalogico.App.Views;
-
-public partial class SensorClimaticoView : UserControl
+namespace SensorAnalogico.App.Views
 {
 
-    public TransitioningContentControl ParentContent { get => (TransitioningContentControl)this.Parent!; }
-    
-    public SensorClimaticoView()
+    public partial class SensorClimaticoView : UserControl
     {
-        InitializeComponent();
-    }
 
+        public TransitioningContentControl ParentContent { get => (TransitioningContentControl)this.Parent!; }
+
+        public SensorClimaticoView()
+        {
+            InitializeComponent();
+        }
+    }
 }

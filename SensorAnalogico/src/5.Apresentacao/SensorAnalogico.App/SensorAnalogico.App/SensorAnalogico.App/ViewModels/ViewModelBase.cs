@@ -6,6 +6,7 @@ namespace SensorAnalogico.App.ViewModels
 {
     public class ViewModelBase : ReactiveObject
     {
+
         public ViewModelBase()
         {
         }

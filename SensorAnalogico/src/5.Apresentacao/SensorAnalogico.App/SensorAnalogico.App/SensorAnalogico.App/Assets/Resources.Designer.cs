@@ -88,11 +88,11 @@ namespace SensorAnalogico.App.Assets {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Component Id.
+        ///   Looks up a localized string similar to Barometric Pressure.
         /// </summary>
-        public static string LabelButton {
+        public static string LabelBarometricPressure {
             get {
-                return ResourceManager.GetString("LabelButton", resourceCulture);
+                return ResourceManager.GetString("LabelBarometricPressure", resourceCulture);
             }
         }
         
@@ -120,6 +120,15 @@ namespace SensorAnalogico.App.Assets {
         public static string LabelButtonGetInput {
             get {
                 return ResourceManager.GetString("LabelButtonGetInput", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save Command.
+        /// </summary>
+        public static string LabelButtonSaveCommand {
+            get {
+                return ResourceManager.GetString("LabelButtonSaveCommand", resourceCulture);
             }
         }
         
@@ -232,11 +241,38 @@ namespace SensorAnalogico.App.Assets {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Status Configuration.
+        ///   Looks up a localized string similar to Component Identity.
+        /// </summary>
+        public static string LabelComponentIdentity {
+            get {
+                return ResourceManager.GetString("LabelComponentIdentity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Configuration.
         /// </summary>
         public static string LabelConfiguration {
             get {
                 return ResourceManager.GetString("LabelConfiguration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Configuration Parameters.
+        /// </summary>
+        public static string LabelConfigurationParameters {
+            get {
+                return ResourceManager.GetString("LabelConfigurationParameters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to General Status.
+        /// </summary>
+        public static string LabelGeneralStatus {
+            get {
+                return ResourceManager.GetString("LabelGeneralStatus", resourceCulture);
             }
         }
         
@@ -246,6 +282,15 @@ namespace SensorAnalogico.App.Assets {
         public static string LabelMicrocontrollerId {
             get {
                 return ResourceManager.GetString("LabelMicrocontrollerId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Moisture.
+        /// </summary>
+        public static string LabelMoisture {
+            get {
+                return ResourceManager.GetString("LabelMoisture", resourceCulture);
             }
         }
         
@@ -264,6 +309,33 @@ namespace SensorAnalogico.App.Assets {
         public static string LabelStatusCommand {
             get {
                 return ResourceManager.GetString("LabelStatusCommand", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Status Configuration.
+        /// </summary>
+        public static string LabelStatusConfiguration {
+            get {
+                return ResourceManager.GetString("LabelStatusConfiguration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Temperature.
+        /// </summary>
+        public static string LabelTemperature {
+            get {
+                return ResourceManager.GetString("LabelTemperature", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update Time:.
+        /// </summary>
+        public static string LabelUpdateTime {
+            get {
+                return ResourceManager.GetString("LabelUpdateTime", resourceCulture);
             }
         }
         
@@ -345,6 +417,15 @@ namespace SensorAnalogico.App.Assets {
         public static string TitleAnalogInputScreen {
             get {
                 return ResourceManager.GetString("TitleAnalogInputScreen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Climate Sensors.
+        /// </summary>
+        public static string TitleClimateSensorScreen {
+            get {
+                return ResourceManager.GetString("TitleClimateSensorScreen", resourceCulture);
             }
         }
         

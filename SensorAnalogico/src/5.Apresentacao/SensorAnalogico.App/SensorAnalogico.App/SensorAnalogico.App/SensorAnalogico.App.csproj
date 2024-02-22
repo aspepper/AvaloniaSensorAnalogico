@@ -16,10 +16,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Assets\Ico_Back.svg" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<PackageReference Include="Avalonia" Version="11.0.9">
 			<TreatAsUsed>true</TreatAsUsed>
 		</PackageReference>
@@ -63,12 +59,6 @@
 
 	<ItemGroup>
 	  <Folder Include="Interfaces\" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <AvaloniaResource Update="Assets\ico_back.svg">
-	    <CopyToOutputDirectory></CopyToOutputDirectory>
-	  </AvaloniaResource>
 	</ItemGroup>
 
 </Project>

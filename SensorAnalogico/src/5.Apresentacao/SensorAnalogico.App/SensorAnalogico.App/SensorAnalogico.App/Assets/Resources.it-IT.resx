@@ -35,6 +35,10 @@
 	    <value>Configurazione dell'Ingresso Analogico</value>
 	</data>
 
+	<data name="TitleClimateSensorScreen" xml:space="preserve">
+	    <value>Sensori Climatici</value>
+	</data>
+
 	<data name="ButtonBack" xml:space="preserve">
 	    <value>Tornare Indietro</value>
 	</data>
@@ -59,8 +63,16 @@
 	    <value>Parametri del Tipo di Comando</value>
 	</data>
 
+	<data name="LabelConfigurationParameters" xml:space="preserve">
+	    <value>Parametri di Configurazione</value>
+	</data>
+
+	<data name="LabelStatusConfiguration" xml:space="preserve">
+	    <value>Status Configuration</value>
+	</data>
+
 	<data name="LabelConfiguration" xml:space="preserve">
-	    <value>Stato Impostazioni</value>
+	    <value>Impostazioni</value>
 	</data>
 
 	<data name="LabelCalibration" xml:space="preserve">
@@ -143,6 +155,10 @@
 	    <value>ID Componente</value>
 	</data>
 
+	<data name="LabelComponentIdentity" xml:space="preserve">
+	    <value>Identità del Componente</value>
+	</data>
+
 	<data name="LabelAnalogInputConfigurationParameters" xml:space="preserve">
 	    <value>Parametri di Configurazione dell'Ingresso Analogico</value>
 	</data>
@@ -189,6 +205,30 @@
 
 	<data name="LabelButtonSaveConfiguration" xml:space="preserve">
 	    <value>Salva Configurazione</value>
+	</data>
+
+	<data name="LabelButtonSaveCommand" xml:space="preserve">
+	    <value>Salva Comando</value>
+	</data>
+
+	<data name="LabelGeneralStatus" xml:space="preserve">
+	    <value>Stato Generale</value>
+	</data>
+
+	<data name="LabelBarometricPressure" xml:space="preserve">
+	    <value>Pressione Barometrica</value>
+	</data>
+
+	<data name="LabelTemperature" xml:space="preserve">
+	    <value>Temperatura</value>
+	</data>
+
+	<data name="LabelMoisture" xml:space="preserve">
+	    <value>Umidità</value>
+	</data>
+
+	<data name="LabelUpdateTime" xml:space="preserve">
+	    <value>Tempo di Aggiornamento:</value>
 	</data>
 
 </root>
