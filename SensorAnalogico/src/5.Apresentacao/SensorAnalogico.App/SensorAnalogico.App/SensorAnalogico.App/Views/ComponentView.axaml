@@ -60,16 +60,31 @@
 					   Content="Tela Componente" />
 			</Panel>
 
-			<Button Grid.Row="1"
-					Name="ButtonAnalogicIntretch"
-					Background="#F0F0F0"
-					HorizontalAlignment="Stretch"
-					Command="{Binding CommandOpenAnalogicIn}"
-					CommandParameter="{Binding ParentContent, RelativeSource={RelativeSource AncestorType=views:ComponentView}}">
-				<Label HorizontalAlignment="Center"
-					   FontWeight="Bold"
-					   Content="Abrir Input Analógico" />
-			</Button>
+			<Grid Grid.Row="1" 
+				  RowDefinitions="Auto,Auto,Auto"
+				  ColumnDefinitions="400,*,400">
+				<Button Grid.Row="0"
+						Grid.Column="1"
+						Background="#F0F0F0"
+						HorizontalAlignment="Stretch"
+						Command="{Binding CommandOpenAnalogicIn}"
+						CommandParameter="{Binding ParentContent, RelativeSource={RelativeSource AncestorType=views:ComponentView}}">
+					<Label HorizontalAlignment="Center"
+						   FontWeight="Bold"
+						   Content="Abrir Input Analógico" />
+				</Button>
+
+				<Button Grid.Row="1"
+						Grid.Column="1"
+						Background="#F0F0F0"
+						HorizontalAlignment="Stretch"
+						Command="{Binding CommandOpenSensorClimatico}"
+						CommandParameter="{Binding ParentContent, RelativeSource={RelativeSource AncestorType=views:ComponentView}}">
+					<Label HorizontalAlignment="Center"
+						   FontWeight="Bold"
+						   Content="Abrir Sensor Climático" />
+				</Button>
+			</Grid>
 
 		</Grid>
 	</Viewbox>

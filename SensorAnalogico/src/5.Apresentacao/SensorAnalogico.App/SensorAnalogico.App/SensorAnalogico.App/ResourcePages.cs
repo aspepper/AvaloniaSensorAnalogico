@@ -10,7 +10,8 @@ namespace SensorAnalogico.App
             MainView,
             Component,
             AnalogicInput,
-            ConfigurationAnalogicInput
+            ConfigurationAnalogicInput,
+            SensorClimatico
         }
 
         public static ViewModelBase GetPage(PageName pageName)
@@ -29,6 +30,9 @@ namespace SensorAnalogico.App
                     break;
                 case PageName.ConfigurationAnalogicInput:
                     model = new AnalogicInConfigViewModel();
+                    break;
+                case PageName.SensorClimatico:
+                    model = new SensorClimaticoViewModel();
                     break;
             }
             return model??new ViewModelBase();

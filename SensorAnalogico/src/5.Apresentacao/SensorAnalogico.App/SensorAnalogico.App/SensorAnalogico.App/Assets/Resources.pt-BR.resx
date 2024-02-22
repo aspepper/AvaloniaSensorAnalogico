@@ -220,7 +220,7 @@
 	</data>
 
 	<data name="LabelTemperature" xml:space="preserve">
-	    <value>Temperatura/</value>
+	    <value>Temperatura</value>
 	</data>
 
 	<data name="LabelMoisture" xml:space="preserve">
