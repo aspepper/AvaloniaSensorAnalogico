@@ -84,6 +84,17 @@
 						   FontWeight="Bold"
 						   Content="Abrir Sensor Climático" />
 				</Button>
+
+				<Button Grid.Row="2"
+						Grid.Column="1"
+						Background="#F0F0F0"
+						HorizontalAlignment="Stretch"
+						Command="{Binding CommandOpenProtocoloLocal}"
+						CommandParameter="{Binding ParentContent, RelativeSource={RelativeSource AncestorType=views:ComponentView}}">
+					<Label HorizontalAlignment="Center"
+						   FontWeight="Bold"
+						   Content="Abrir Protocolo Local" />
+				</Button>
 			</Grid>
 
 		</Grid>

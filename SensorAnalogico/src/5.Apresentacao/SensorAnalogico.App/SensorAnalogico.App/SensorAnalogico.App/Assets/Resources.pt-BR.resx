@@ -231,4 +231,44 @@
 	    <value>Tempo de Atualização:</value>
 	</data>
 
+	<data name="LabelNote" xml:space="preserve">
+	    <value>Anotações</value>
+	</data>
+
+	<data name="LabelButtonSend" xml:space="preserve">
+	    <value>Enviar</value>
+	</data>
+
+	<data name="LabelButtonUpdate" xml:space="preserve">
+	    <value>Atualizar</value>
+	</data>
+
+	<data name="LabelEvents" xml:space="preserve">
+	    <value>Eventos</value>
+	</data>
+
+	<data name="LabelEvents" xml:space="preserve">
+	    <value>Eventos</value>
+	</data>
+
+	<data name="LabelPort1" xml:space="preserve">
+	    <value>Porta nº1</value>
+	</data>
+
+	<data name="LabelPort2" xml:space="preserve">
+	    <value>Porta nº2</value>
+	</data>
+
+	<data name="LabelPort3" xml:space="preserve">
+	    <value>Porta nº3</value>
+	</data>
+
+	<data name="LabelBaldRate" xml:space="preserve">
+	    <value>Bald Rate</value>
+	</data>
+
+	<data name="LabelOpen" xml:space="preserve">
+	    <value>Abrir</value>
+	</data>
+
 </root>

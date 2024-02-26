@@ -8,15 +8,308 @@
              mc:Ignorable="d"
 			 d:DesignWidth="1280"
 			 d:DesignHeight="800"
-             x:Class="SensorAnalogico.App.Views.ProtocoloLocalView"
-             x:DataType="vm:AnalogicInViewModel"
+             x:Class="SensorAnalogico.App.Views.LocalProtocolView"
+             x:DataType="vm:LocalProtocolViewModel"
 			 Padding="0"
-			 Background="Transparent">
+			 Background="#D1D3D4">
 	<Design.DataContext>
-		<vm:AnalogicInViewModel />
+		<vm:LocalProtocolViewModel />
 	</Design.DataContext>
 
 	<Viewbox Stretch="UniformToFill" StretchDirection="Both">
-		
+
+		<Grid ColumnDefinitions="16,301,16,632,11,288,16"
+			  RowDefinitions="16,752,32">
+
+			<!-- INI: Coluna 01 -->
+			<Grid Grid.Row="1"
+				  Grid.Column="1"
+				  RowDefinitions="404,16,332">
+
+				<Grid Grid.Row="0"
+					  RowDefinitions="54,*">
+
+					<!-- Linha 0 -->
+					<Border Grid.Row="0"
+							Grid.Column="0"
+							CornerRadius="8,0"
+							BorderBrush="#323232"
+							BorderThickness="1"
+							Background="#323232" >
+						<Label HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   FontSize="24"
+							   Foreground="#FFFFFF"
+							   Content="{x:Static assets:Resources.LabelNote}" />
+					</Border>
+
+					<!-- Linha 1 -->
+					<Border Grid.Row="1"
+							Grid.Column="0"
+							CornerRadius="0,8"
+							BorderBrush="#323232"
+							BorderThickness="1,0,1,1"
+							Background="#FAFAFA">
+						<ScrollViewer>
+							<TextBlock Background="Transparent"
+									   Margin="5"
+									   VerticalAlignment="Stretch"
+									   HorizontalAlignment="Stretch"
+									   Text="{Binding Notes}"/>
+						</ScrollViewer>
+					</Border>
+
+				</Grid>
+
+				<Grid Grid.Row="2"
+					  RowDefinitions="70,16,70,16,70,16,70,4">
+
+					<Button Grid.Row="0"
+							CornerRadius="8"
+							Background="#EFEFEF"
+							VerticalAlignment="Stretch"
+							HorizontalAlignment="Stretch">
+						<Label Content="{x:Static assets:Resources.LabelButtonSend}"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   FontSize="24"
+							   FontWeight="Bold"/>
+					</Button>
+
+					<Button Grid.Row="2"
+							CornerRadius="8"
+							Background="#EFEFEF"
+							VerticalAlignment="Stretch"
+							HorizontalAlignment="Stretch">
+						<Label Content="{x:Static assets:Resources.LabelButtonUpdate}"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   FontSize="24"
+							   FontWeight="Bold"/>
+					</Button>
+
+					<Button Grid.Row="4"
+							CornerRadius="8"
+							Background="#EFEFEF"
+							VerticalAlignment="Stretch"
+							HorizontalAlignment="Stretch">
+						<Label Content="{x:Static assets:Resources.LabelButtonClear}"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   FontSize="24"
+							   FontWeight="Bold"/>
+					</Button>
+
+					<Button Grid.Row="6"
+							CornerRadius="8"
+							Background="#E20613"
+							VerticalAlignment="Stretch"
+							HorizontalAlignment="Stretch">
+						<Label Content="{x:Static assets:Resources.ButtonBack}"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   FontSize="24"
+							   FontWeight="Bold"
+							   Foreground="#FFFFFF"/>
+					</Button>
+				</Grid>
+
+			</Grid>
+			<!-- FIM: Coluna 01 -->
+
+			<!-- INI: Coluna 02 -->
+			<Grid Grid.Row="1"
+				  Grid.Column="3"
+				  RowDefinitions="54,*">
+
+				<!-- Linha 0 -->
+				<Border Grid.Row="0"
+						Grid.Column="0"
+						CornerRadius="8,0"
+						BorderBrush="#323232"
+						BorderThickness="1"
+						Background="#323232" >
+					<Label HorizontalAlignment="Center"
+						   VerticalAlignment="Center"
+						   FontSize="24"
+						   Foreground="#FFFFFF"
+						   Content="{x:Static assets:Resources.LabelNote}" />
+				</Border>
+
+				<!-- Linha 1 -->
+				<Border Grid.Row="1"
+						Grid.Column="0"
+						CornerRadius="0,8"
+						BorderBrush="#323232"
+						BorderThickness="1,0,1,1"
+						Background="#000000">
+					<ScrollViewer>
+						<TextBlock Background="Transparent"
+								   Margin="5"
+								   VerticalAlignment="Stretch"
+								   HorizontalAlignment="Stretch"
+								   Foreground="#FAFAFA"
+								   Text="{Binding Notes}"/>
+					</ScrollViewer>
+
+				</Border>
+
+			</Grid>
+			<!-- FIM: Coluna 02 -->
+
+			<!-- INI: Coluna 03 -->
+			<Grid Grid.Row="1"
+				  Grid.Column="5"
+				  RowDefinitions="28,80,8,54,21,28,80,8,54,21,28,80,8,54,69,28,80">
+
+				<!-- INI: Porta 01 -->
+				<Border Grid.Row="0"
+						CornerRadius="8,0"
+						BorderBrush="#323232"
+						BorderThickness="1"
+						Background="#323232" >
+					<Label HorizontalAlignment="Center"
+							VerticalAlignment="Center"
+							FontSize="20"
+							Foreground="#FFFFFF"
+							Content="{x:Static assets:Resources.LabelPort1}" />
+				</Border>
+
+				<Border Grid.Row="1"
+						CornerRadius="0,8"
+						BorderBrush="#323232"
+						BorderThickness="1,0,1,1"
+						Background="#FAFAFA">
+					<ComboBox Margin="10"
+							  HorizontalAlignment="Stretch"
+							  VerticalAlignment="Stretch"
+							  FontSize="28"
+							  FontWeight="Bold"
+							  ItemsSource="{Binding ListaPorta01}"
+							  SelectedItem="{Binding SelectedPort1}" />
+				</Border>
+
+				<Button Grid.Row="3"
+						VerticalAlignment="Stretch"
+						HorizontalAlignment="Stretch"
+						Background="#FFC140"
+						CornerRadius="8">
+					<Label Content="{x:Static assets:Resources.LabelOpen}"
+						   HorizontalAlignment="Center"
+						   VerticalAlignment="Center"
+						   FontSize="16"
+						   FontWeight="Bold"/>
+				</Button>
+				<!-- FIM: Coluna 01 -->
+
+				<!-- INI: Porta 02 -->
+				<Border Grid.Row="5"
+						CornerRadius="8,0"
+						BorderBrush="#323232"
+						BorderThickness="1"
+						Background="#323232" >
+					<Label HorizontalAlignment="Center"
+							VerticalAlignment="Center"
+							FontSize="20"
+							Foreground="#FFFFFF"
+							Content="{x:Static assets:Resources.LabelPort2}" />
+				</Border>
+
+				<Border Grid.Row="6"
+						CornerRadius="0,8"
+						BorderBrush="#323232"
+						BorderThickness="1,0,1,1"
+						Background="#FAFAFA">
+					<ComboBox Margin="10"
+							  HorizontalAlignment="Stretch"
+							  VerticalAlignment="Stretch"
+							  FontSize="28"
+							  FontWeight="Bold"
+							  ItemsSource="{Binding ListaPorta02}"
+							  SelectedItem="{Binding SelectedPort2}" />
+				</Border>
+
+				<Button Grid.Row="8"
+						VerticalAlignment="Stretch"
+						HorizontalAlignment="Stretch"
+						Background="#FFC140"
+						CornerRadius="8">
+					<Label Content="{x:Static assets:Resources.LabelOpen}"
+						   HorizontalAlignment="Center"
+						   VerticalAlignment="Center"
+						   FontSize="16"
+						   FontWeight="Bold"/>
+				</Button>
+				<!-- FIM: Coluna 02 -->
+
+				<!-- INI: Porta 03 -->
+				<Border Grid.Row="10"
+						CornerRadius="8,0"
+						BorderBrush="#323232"
+						BorderThickness="1"
+						Background="#323232" >
+					<Label HorizontalAlignment="Center"
+							VerticalAlignment="Center"
+							FontSize="20"
+							Foreground="#FFFFFF"
+							Content="{x:Static assets:Resources.LabelPort3}" />
+				</Border>
+
+				<Border Grid.Row="11"
+						CornerRadius="0,8"
+						BorderBrush="#323232"
+						BorderThickness="1,0,1,1"
+						Background="#FAFAFA">
+					<ComboBox Margin="10"
+							  HorizontalAlignment="Stretch"
+							  VerticalAlignment="Stretch"
+							  FontSize="28"
+							  FontWeight="Bold"
+							  ItemsSource="{Binding ListaPorta03}"
+							  SelectedItem="{Binding SelectedPort3}" />
+				</Border>
+
+				<Button Grid.Row="13"
+						VerticalAlignment="Stretch"
+						HorizontalAlignment="Stretch"
+						Background="#FFC140"
+						CornerRadius="8">
+					<Label Content="{x:Static assets:Resources.LabelOpen}"
+						   HorizontalAlignment="Center"
+						   VerticalAlignment="Center"
+						   FontSize="16"
+						   FontWeight="Bold"/>
+				</Button>
+				<!-- FIM: Coluna 03 -->
+
+				<!-- INI: Bald Rate -->
+				<Border Grid.Row="15"
+						CornerRadius="8,0"
+						BorderBrush="#323232"
+						BorderThickness="1"
+						Background="#323232" >
+					<Label HorizontalAlignment="Center"
+							VerticalAlignment="Center"
+							FontSize="20"
+							Foreground="#FFFFFF"
+							Content="{x:Static assets:Resources.LabelBaldRate}" />
+				</Border>
+
+				<Border Grid.Row="16"
+						CornerRadius="0,8"
+						BorderBrush="#323232"
+						BorderThickness="1,0,1,1"
+						Background="#FAFAFA">
+					<TextBox CornerRadius="8"
+							 Margin="8"
+							 DataContext="{Binding BaldRate}"/>
+				</Border>
+				<!-- FIM: Bald Rate -->
+
+			</Grid>
+			<!-- FIM: Coluna 03 -->
+
+		</Grid>
 	</Viewbox>
+
 </UserControl>

@@ -88,6 +88,15 @@ namespace SensorAnalogico.App.Assets {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bald Rate.
+        /// </summary>
+        public static string LabelBaldRate {
+            get {
+                return ResourceManager.GetString("LabelBaldRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Barometric Pressure.
         /// </summary>
         public static string LabelBarometricPressure {
@@ -115,6 +124,15 @@ namespace SensorAnalogico.App.Assets {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Clean.
+        /// </summary>
+        public static string LabelButtonClear {
+            get {
+                return ResourceManager.GetString("LabelButtonClear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Get Input.
         /// </summary>
         public static string LabelButtonGetInput {
@@ -138,6 +156,24 @@ namespace SensorAnalogico.App.Assets {
         public static string LabelButtonSaveConfiguration {
             get {
                 return ResourceManager.GetString("LabelButtonSaveConfiguration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Send.
+        /// </summary>
+        public static string LabelButtonSend {
+            get {
+                return ResourceManager.GetString("LabelButtonSend", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update.
+        /// </summary>
+        public static string LabelButtonUpdate {
+            get {
+                return ResourceManager.GetString("LabelButtonUpdate", resourceCulture);
             }
         }
         
@@ -268,6 +304,15 @@ namespace SensorAnalogico.App.Assets {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Eventos.
+        /// </summary>
+        public static string LabelEvents {
+            get {
+                return ResourceManager.GetString("LabelEvents", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to General Status.
         /// </summary>
         public static string LabelGeneralStatus {
@@ -291,6 +336,51 @@ namespace SensorAnalogico.App.Assets {
         public static string LabelMoisture {
             get {
                 return ResourceManager.GetString("LabelMoisture", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Note.
+        /// </summary>
+        public static string LabelNote {
+            get {
+                return ResourceManager.GetString("LabelNote", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open.
+        /// </summary>
+        public static string LabelOpen {
+            get {
+                return ResourceManager.GetString("LabelOpen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Port #1.
+        /// </summary>
+        public static string LabelPort1 {
+            get {
+                return ResourceManager.GetString("LabelPort1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Port #2.
+        /// </summary>
+        public static string LabelPort2 {
+            get {
+                return ResourceManager.GetString("LabelPort2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Port #3.
+        /// </summary>
+        public static string LabelPort3 {
+            get {
+                return ResourceManager.GetString("LabelPort3", resourceCulture);
             }
         }
         

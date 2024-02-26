@@ -230,5 +230,49 @@
 	<data name="LabelUpdateTime" xml:space="preserve">
 	    <value>Update Time:</value>
 	</data>
-	
+
+	<data name="LabelNote" xml:space="preserve">
+	    <value>Note</value>
+	</data>
+
+	<data name="LabelButtonSend" xml:space="preserve">
+	    <value>Send</value>
+	</data>
+
+	<data name="LabelButtonUpdate" xml:space="preserve">
+	    <value>Update</value>
+	</data>
+
+	<data name="LabelButtonClear" xml:space="preserve">
+	    <value>Clean</value>
+	</data>
+
+	<data name="LabelEvents" xml:space="preserve">
+	    <value>Events</value>
+	</data>
+
+	<data name="LabelEvents" xml:space="preserve">
+	    <value>Eventos</value>
+	</data>
+
+	<data name="LabelPort1" xml:space="preserve">
+	    <value>Port #1</value>
+	</data>
+
+	<data name="LabelPort2" xml:space="preserve">
+	    <value>Port #2</value>
+	</data>
+
+	<data name="LabelPort3" xml:space="preserve">
+	    <value>Port #3</value>
+	</data>
+
+	<data name="LabelBaldRate" xml:space="preserve">
+	    <value>Bald Rate</value>
+	</data>
+
+	<data name="LabelOpen" xml:space="preserve">
+	    <value>Open</value>
+	</data>
+
 </root>

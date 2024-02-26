@@ -9,11 +9,13 @@ namespace SensorAnalogico.App.ViewModels
 
         public ICommand CommandOpenAnalogicIn { get; }
         public ICommand CommandOpenSensorClimatico { get; }
+        public ICommand CommandOpenProtocoloLocal { get; }
 
         public ComponentViewModel()
         {
             CommandOpenAnalogicIn = ReactiveCommand.Create((TransitioningContentControl tcc) => CommandOpenAnalogicIn_Action(tcc));
             CommandOpenSensorClimatico = ReactiveCommand.Create((TransitioningContentControl tcc) => CommandOpenSensorClimatico_Action(tcc));
+            CommandOpenProtocoloLocal = ReactiveCommand.Create((TransitioningContentControl tcc) => CommandOpenSensorProtocoloLocal_Action(tcc));
         }
 
         private void CommandOpenAnalogicIn_Action(TransitioningContentControl tcc)
@@ -24,6 +26,11 @@ namespace SensorAnalogico.App.ViewModels
         private void CommandOpenSensorClimatico_Action(TransitioningContentControl tcc)
         {
             this.NavigateTo(tcc, ResourcePages.PageName.SensorClimatico);
+        }
+
+        private void CommandOpenSensorProtocoloLocal_Action(TransitioningContentControl tcc)
+        {
+            this.NavigateTo(tcc, ResourcePages.PageName.LocalProtocol);
         }
     }
 }
