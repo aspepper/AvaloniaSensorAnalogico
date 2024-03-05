@@ -16,7 +16,7 @@
 		<vm:AnalogicInViewModel />
 	</Design.DataContext>
 
-	<Viewbox Stretch="UniformToFill" StretchDirection="Both">
+	<Viewbox Stretch="Uniform" StretchDirection="Both">
 		
 		<Grid RowDefinitions="86,610,104">
 

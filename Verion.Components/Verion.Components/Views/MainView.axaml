@@ -1,0 +1,25 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:Verion.Components.ViewModels"
+			 xmlns:ctrl="using:Verion.Components.Components"
+             mc:Ignorable="d"
+			 d:DesignWidth="1280"
+			 d:DesignHeight="800"
+             x:Class="Verion.Components.Views.MainView"
+             x:DataType="vm:MainViewModel">
+	<Design.DataContext>
+		<!-- This only sets the DataContext for the previewer in an IDE,
+         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+		<vm:MainViewModel />
+	</Design.DataContext>
+
+	<Viewbox Stretch="Uniform">
+		<Grid RowDefinitions="86,610,104">
+			<ctrl:Header Grid.Row="0" />
+			<Label Grid.Row="1" Content="Teste" />
+		</Grid>
+	</Viewbox>
+
+</UserControl>

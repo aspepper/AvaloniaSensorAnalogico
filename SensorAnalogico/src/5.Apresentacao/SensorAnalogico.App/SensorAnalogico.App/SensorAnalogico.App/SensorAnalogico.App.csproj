@@ -31,7 +31,7 @@
 		<PackageReference Include="Avalonia.ReactiveUI" Version="11.0.9" />
 		<!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
 		<PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.9" />
-		<PackageReference Include="Material.Avalonia" Version="3.3.0" />
+		<PackageReference Include="Material.Avalonia" Version="3.4.1" />
 		<PackageReference Include="Material.Icons.Avalonia" Version="2.1.0" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
@@ -50,15 +50,22 @@
 			<AutoGen>True</AutoGen>
 			<DependentUpon>Resources.resx</DependentUpon>
 		</Compile>
+		<Compile Update="Views\SensorMicrocontroladorVRPView.axaml.cs">
+		  <DependentUpon>SensorMicrocontroladorVRPView.axaml</DependentUpon>
+		</Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Update="Microsoft.SourceLink.GitLab" Version="8.0.0" />
-	  <PackageReference Update="Verion.Development" Version="17.0.2" />
+		<PackageReference Update="Microsoft.SourceLink.GitLab" Version="8.0.0" />
+		<PackageReference Update="Verion.Development" Version="17.0.2" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Interfaces\" />
+		<Folder Include="Interfaces\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\..\..\..\Verion.Components\Verion.Components\Verion.Components.csproj" />
 	</ItemGroup>
 
 </Project>

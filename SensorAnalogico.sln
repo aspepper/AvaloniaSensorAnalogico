@@ -33,6 +33,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorAnalogico.App.Desktop
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SensorAnalogico.App.iOS", "SensorAnalogico\src\5.Apresentacao\SensorAnalogico.App\SensorAnalogico.App\SensorAnalogico.App.iOS\SensorAnalogico.App.iOS.csproj", "{5AC65666-E0B8-4D9C-AE13-DA58C145FC49}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", "{35E13010-2283-4081-AE83-D2CC888DF5EB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Verion.Components", "Verion.Components\Verion.Components\Verion.Components.csproj", "{2685A6E3-A21C-4430-AFA7-8A6B8486804B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Verion.Components.Desktop", "Verion.Components\Verion.Components.Desktop\Verion.Components.Desktop.csproj", "{2BBD3C2F-F161-4CF1-A4A0-3679E166D8EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +69,14 @@ Global
 		{5AC65666-E0B8-4D9C-AE13-DA58C145FC49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AC65666-E0B8-4D9C-AE13-DA58C145FC49}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5AC65666-E0B8-4D9C-AE13-DA58C145FC49}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2685A6E3-A21C-4430-AFA7-8A6B8486804B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2685A6E3-A21C-4430-AFA7-8A6B8486804B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2685A6E3-A21C-4430-AFA7-8A6B8486804B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2685A6E3-A21C-4430-AFA7-8A6B8486804B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BBD3C2F-F161-4CF1-A4A0-3679E166D8EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BBD3C2F-F161-4CF1-A4A0-3679E166D8EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BBD3C2F-F161-4CF1-A4A0-3679E166D8EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BBD3C2F-F161-4CF1-A4A0-3679E166D8EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +89,8 @@ Global
 		{6376D25F-7E4E-42CB-BAAA-6760DA381182} = {0CC1316B-302D-4EB6-BAC9-73029E1F96C4}
 		{E36DFA1C-5A8D-480B-B998-64EDEDDC9033} = {0CC1316B-302D-4EB6-BAC9-73029E1F96C4}
 		{5AC65666-E0B8-4D9C-AE13-DA58C145FC49} = {0CC1316B-302D-4EB6-BAC9-73029E1F96C4}
+		{2685A6E3-A21C-4430-AFA7-8A6B8486804B} = {35E13010-2283-4081-AE83-D2CC888DF5EB}
+		{2BBD3C2F-F161-4CF1-A4A0-3679E166D8EA} = {35E13010-2283-4081-AE83-D2CC888DF5EB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {071CAE6C-E4F7-44AC-B3E8-7965B8B23ABF}

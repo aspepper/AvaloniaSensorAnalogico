@@ -1,0 +1,42 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:Verion.Components.Components">
+	<Design.PreviewWith>
+		<controls:ButtonImageCaption />
+	</Design.PreviewWith>
+
+	<Style Selector="controls|ButtonImageCaption">
+		
+		<Setter Property="Template">
+			<ControlTemplate>
+				<Border Grid.Column="1"
+						CornerRadius="6"
+						Margin="0,3,0,5"
+						Padding="0"
+						BoxShadow="3 3 5 0 #A9A9A9"
+						Background="#D1D3D4">
+					<Button Name="TCHeaderButtonBack"
+							VerticalAlignment="Stretch"
+							HorizontalAlignment="Stretch"
+							Background="Transparent">
+						<Grid RowDefinitions="*,*">
+							<Image Name="TCHeaderButtonImage"
+								   Grid.Row="0"
+								   HorizontalAlignment="Center"
+								   VerticalAlignment="Center"
+								   Width="45"
+								   Height="45"
+								   Margin="0,5,0,0" />
+							<Label Name="TCHeaderButtonLabel"
+								   Grid.Row="1"
+								   FontWeight="Bold"
+								   FontSize="18"
+								   HorizontalAlignment="Center"
+								   VerticalAlignment="Center" />
+						</Grid>
+					</Button>
+				</Border>
+			</ControlTemplate>
+		</Setter>
+	</Style>
+</Styles>
