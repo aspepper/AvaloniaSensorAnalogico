@@ -35,6 +35,10 @@
 	    <value>Analog Input Configuration</value>
 	</data>
 
+	<data name="TitlePositionMarkerScreen" xml:space="preserve">
+	    <value>Position Marker</value>
+	</data>
+
 	<data name="TitleClimateSensorScreen" xml:space="preserve">
 	    <value>Climate Sensors</value>
 	</data>

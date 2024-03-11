@@ -13,7 +13,8 @@ namespace SensorAnalogico.App
             ConfigurationAnalogicInput,
             SensorClimatico,
             LocalProtocol,
-            SensorMicrocontroladorVRP
+            SensorMicrocontroladorVRP,
+            SensorPositionMarker
         }
 
         public static ViewModelBase GetPage(PageName pageName)
@@ -41,6 +42,9 @@ namespace SensorAnalogico.App
                     break;
                 case PageName.LocalProtocol:
                     model = new LocalProtocolViewModel();
+                    break;
+                case PageName.SensorPositionMarker:
+                    model = new MarcadorDePosicaoViewModel();
                     break;
             }
             return model??new ViewModelBase();

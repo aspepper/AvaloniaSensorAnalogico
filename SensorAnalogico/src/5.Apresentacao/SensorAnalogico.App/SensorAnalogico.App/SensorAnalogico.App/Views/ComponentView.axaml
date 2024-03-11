@@ -61,7 +61,7 @@
 			</Panel>
 
 			<Grid Grid.Row="1" 
-				  RowDefinitions="Auto,Auto,Auto,Auto"
+				  RowDefinitions="Auto,Auto,Auto,Auto,Auto"
 				  ColumnDefinitions="400,*,400">
 				<Button Grid.Row="0"
 						Grid.Column="1"
@@ -105,6 +105,17 @@
 					<Label HorizontalAlignment="Center"
 						   FontWeight="Bold"
 						   Content="Abrir Controle VRP" />
+				</Button>
+
+				<Button Grid.Row="4"
+						Grid.Column="1"
+						Background="#F0F0F0"
+						HorizontalAlignment="Stretch"
+						Command="{Binding CommandOpenPositionMarker}"
+						CommandParameter="{Binding ParentContent, RelativeSource={RelativeSource AncestorType=views:ComponentView}}">
+					<Label HorizontalAlignment="Center"
+						   FontWeight="Bold"
+						   Content="Abrir Marcador de Posição" />
 				</Button>
 			</Grid>
 

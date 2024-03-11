@@ -11,6 +11,7 @@ namespace SensorAnalogico.App.ViewModels
         public ICommand CommandOpenSensorClimatico { get; }
         public ICommand CommandOpenProtocoloLocal { get; }
         public ICommand CommandOpenVRPControl { get; }
+        public ICommand CommandOpenPositionMarker { get; }
 
         public ComponentViewModel()
         {
@@ -18,6 +19,7 @@ namespace SensorAnalogico.App.ViewModels
             CommandOpenSensorClimatico = ReactiveCommand.Create((TransitioningContentControl tcc) => CommandOpenSensorClimatico_Action(tcc));
             CommandOpenProtocoloLocal = ReactiveCommand.Create((TransitioningContentControl tcc) => CommandOpenSensorProtocoloLocal_Action(tcc));
             CommandOpenVRPControl = ReactiveCommand.Create((TransitioningContentControl tcc) => CommandOpenVRPControl_Action(tcc));
+            CommandOpenPositionMarker = ReactiveCommand.Create((TransitioningContentControl tcc) => CommandOpenPositionMarker_Action(tcc));
         }
 
         private void CommandOpenAnalogicIn_Action(TransitioningContentControl tcc)
@@ -38,6 +40,11 @@ namespace SensorAnalogico.App.ViewModels
         private void CommandOpenVRPControl_Action(TransitioningContentControl tcc)
         {
             this.NavigateTo(tcc, ResourcePages.PageName.SensorMicrocontroladorVRP);
+        }
+
+        private void CommandOpenPositionMarker_Action(TransitioningContentControl tcc)
+        {
+            this.NavigateTo(tcc, ResourcePages.PageName.SensorPositionMarker);
         }
     }
 }

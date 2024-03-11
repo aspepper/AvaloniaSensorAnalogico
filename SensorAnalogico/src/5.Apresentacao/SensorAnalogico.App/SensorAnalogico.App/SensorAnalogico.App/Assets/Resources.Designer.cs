@@ -527,5 +527,14 @@ namespace SensorAnalogico.App.Assets {
                 return ResourceManager.GetString("TitleComponentScreen", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Position Marker.
+        /// </summary>
+        public static string TitlePositionMarkerScreen {
+            get {
+                return ResourceManager.GetString("TitlePositionMarkerScreen", resourceCulture);
+            }
+        }
     }
 }

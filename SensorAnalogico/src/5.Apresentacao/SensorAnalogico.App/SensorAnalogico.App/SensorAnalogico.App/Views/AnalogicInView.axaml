@@ -595,6 +595,7 @@
 
 			</Grid>
 
+			<!-- Informações Id Microcontrolador, Id Componente e Obter Entrada -->
 			<Grid Grid.Row="2"
 				  ColumnDefinitions="30,924,65,232,30"
 				  Background="#D1D3D4">

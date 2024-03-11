@@ -31,6 +31,10 @@
 	    <value>Entrada Analógica</value>
 	</data>
 
+	<data name="TitlePositionMarkerScreen" xml:space="preserve">
+	    <value>Marcador de Posição</value>
+	</data>
+
 	<data name="TitleAnalogInputConfigurationScreen" xml:space="preserve">
 	    <value>Configuração de Entrada Analógica</value>
 	</data>

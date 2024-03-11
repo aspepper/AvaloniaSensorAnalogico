@@ -39,6 +39,10 @@
 	    <value>Sensori Climatici</value>
 	</data>
 
+	<data name="TitlePositionMarkerScreen" xml:space="preserve">
+	    <value>Marcador de Posiçao</value>
+	</data>
+
 	<data name="ButtonBack" xml:space="preserve">
 	    <value>Tornare Indietro</value>
 	</data>
