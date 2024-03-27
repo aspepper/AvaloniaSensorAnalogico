@@ -51,7 +51,7 @@
 			<DependentUpon>Resources.resx</DependentUpon>
 		</Compile>
 		<Compile Update="Views\SensorMicrocontroladorVRPView.axaml.cs">
-		  <DependentUpon>SensorMicrocontroladorVRPView.axaml</DependentUpon>
+			<DependentUpon>SensorMicrocontroladorVRPView.axaml</DependentUpon>
 		</Compile>
 	</ItemGroup>
 
