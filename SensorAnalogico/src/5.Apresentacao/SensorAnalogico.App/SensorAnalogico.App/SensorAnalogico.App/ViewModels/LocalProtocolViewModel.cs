@@ -1,7 +1,5 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Media;
-using DynamicData;
-using Microsoft.Extensions.Logging;
 using ReactiveUI;
 using SensorAnalogico.App.Services;
 using System;
@@ -59,13 +57,13 @@ namespace SensorAnalogico.App.ViewModels
                                                                             "Hidráulico",
                                                                             "Eletronico"
                                                                          ];
-        private string selectedPort1;
+        private string selectedPort1 = string.Empty;
         public string SelectedPort1 { get => selectedPort1; set => this.RaiseAndSetIfChanged(ref selectedPort1, value); }
-        private string selectedPort2;
+        private string selectedPort2 = string.Empty;
         public string SelectedPort2 { get => selectedPort2; set => this.RaiseAndSetIfChanged(ref selectedPort2, value); }
-        private string selectedPort3;
+        private string selectedPort3 = string.Empty;
         public string SelectedPort3 { get => selectedPort3; set => this.RaiseAndSetIfChanged(ref selectedPort3, value); }
-        private string baldRate;
+        private string baldRate = string.Empty;
         public string BaldRate { get => baldRate; set => this.RaiseAndSetIfChanged(ref baldRate, value); }
 
 

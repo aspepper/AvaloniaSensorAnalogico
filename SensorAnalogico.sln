@@ -39,6 +39,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Verion.Components", "Verion
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Verion.Components.Desktop", "Verion.Components\Verion.Components.Desktop\Verion.Components.Desktop.csproj", "{2BBD3C2F-F161-4CF1-A4A0-3679E166D8EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleDeTeste", "ConsoleDeTeste\ConsoleDeTeste.csproj", "{8505068C-7AC1-4B78-BC44-00853C40A244}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{2BBD3C2F-F161-4CF1-A4A0-3679E166D8EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BBD3C2F-F161-4CF1-A4A0-3679E166D8EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BBD3C2F-F161-4CF1-A4A0-3679E166D8EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8505068C-7AC1-4B78-BC44-00853C40A244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8505068C-7AC1-4B78-BC44-00853C40A244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8505068C-7AC1-4B78-BC44-00853C40A244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8505068C-7AC1-4B78-BC44-00853C40A244}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,6 +97,7 @@ Global
 		{5AC65666-E0B8-4D9C-AE13-DA58C145FC49} = {0CC1316B-302D-4EB6-BAC9-73029E1F96C4}
 		{2685A6E3-A21C-4430-AFA7-8A6B8486804B} = {35E13010-2283-4081-AE83-D2CC888DF5EB}
 		{2BBD3C2F-F161-4CF1-A4A0-3679E166D8EA} = {35E13010-2283-4081-AE83-D2CC888DF5EB}
+		{8505068C-7AC1-4B78-BC44-00853C40A244} = {82A7D31F-CAA4-47CA-B45B-9981AC62F540}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {071CAE6C-E4F7-44AC-B3E8-7965B8B23ABF}

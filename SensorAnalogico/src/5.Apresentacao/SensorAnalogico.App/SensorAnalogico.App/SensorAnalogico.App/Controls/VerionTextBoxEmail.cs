@@ -8,6 +8,8 @@ namespace SensorAnalogico.App.Controls
 {
     public class VerionTextBoxEmail : TextBox
     {
+        protected override Type StyleKeyOverride => typeof(TextBox);
+
         public static readonly StyledProperty<bool> IsEmailValidProperty =
             AvaloniaProperty.Register<VerionTextBoxEmail, bool>(nameof(IsEmailValid), true, true);
 

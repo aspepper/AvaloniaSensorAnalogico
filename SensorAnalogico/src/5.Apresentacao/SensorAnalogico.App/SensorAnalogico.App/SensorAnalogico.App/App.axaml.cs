@@ -6,6 +6,8 @@ using SensorAnalogico.App.Views;
 
 namespace SensorAnalogico.App;
 
+delegate void ValidateContent(object e);
+
 public partial class App : Application
 {
     public override void Initialize()

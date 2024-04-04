@@ -31,7 +31,7 @@ namespace SensorAnalogico.App.Services
         public ViewModelBase ViewModelBase { get; protected set; } = new MainViewModel();
 
         // The default is the first page
-        private static ViewModelBase _CurrentPage;
+        private static ViewModelBase _CurrentPage = new();
 
         /// <summary>
         /// Gets the current page. The property is read-only

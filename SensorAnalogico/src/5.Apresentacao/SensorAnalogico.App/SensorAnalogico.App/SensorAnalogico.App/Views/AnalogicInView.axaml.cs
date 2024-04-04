@@ -12,4 +12,19 @@ public partial class AnalogicInView : UserControl
         InitializeComponent();
     }
 
+    private void ButtonGetInfo_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        PopUpExemplo.IsVisible = !PopUpExemplo.IsVisible;
+    }
+
+    public void ShowPopup()
+    {
+        PopUpExemplo.IsVisible = true;
+    }
+
+    public void HidePopup()
+    {
+        PopUpExemplo.IsVisible = false;
+    }
+
 }
